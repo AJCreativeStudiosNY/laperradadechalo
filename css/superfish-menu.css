@@ -1,0 +1,221 @@
+/* ======= Main menu variables ======= */
+/* ======= Sub menus common variables ======= */
+/* ======= First level sub menu variables ======= */
+/* ======= Second level sub menu variables ======= */
+@media (max-width: 767px) {
+  nav {
+    background: #1b1b1b;
+  }
+}
+/* Main menu styles
+========================================================*/
+.sf-menu > li {
+  border-top: 10px solid transparent;
+  width: 16.666666666666668%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.sf-menu > li:hover {
+  border-top: 10px solid #1b1b1b;
+  cursor: pointer;
+}
+.sf-menu > li.first {
+  background: #72286d;
+}
+.sf-menu > li.second {
+  background: #103168;
+}
+.sf-menu > li.third {
+  background: #2c664e;
+}
+.sf-menu > li.fourth {
+  background: #fa751e;
+}
+.sf-menu > li.fifth {
+  background: #fcc30c;
+}
+.sf-menu > li.sixth {
+  background: #63a037;
+}
+.sf-menu > li > .sf-with-ul:after {
+  font-family: FontAwesome;
+  font-size: 22px;
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: default;
+  content: "\f107";
+  color: #ffffff;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -7px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.sf-menu > li > a {
+  padding: 19px 0 28px;
+  display: block;
+  text-transform: uppercase;
+  font: 700 23px/23px "Lato", sans-serif;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #ffffff;
+}
+@media (max-width: 979px) {
+  .sf-menu > li > a {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+.sf-menu > li > a:hover {
+  color: #ffffff;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+.sf-menu > li > a:active {
+  background: transparent;
+  color: #ffffff;
+}
+.sf-menu .sfHover {
+  border-top: 10px solid #1b1b1b;
+}
+.sf-menu .sfHover > a:after {
+  color: #ffffff;
+}
+.sf-menu > li.current {
+  border-top: 10px solid #1b1b1b;
+}
+.sf-menu > li.current > a {
+  color: #ffffff;
+}
+.sf-menu > li.current > .sf-with-ul:after {
+  color: #ffffff;
+}
+.sf-menu > li.sfHover {
+  border-top: 10px solid #1b1b1b;
+}
+.sf-menu > li.sfHover > a {
+  color: #ffffff;
+}
+.sf-menu a {
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+.sf-menu a:hover {
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+/* First level sub-menu styles
+========================================================*/
+.sf-menu ul {
+  display: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 200px;
+  font: 400 13px/13px Lato, sans-serif;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background: #2c664e;
+  text-align: left;
+  padding: 16px 0 23px 0;
+  z-index: 2;
+}
+.sf-menu ul li {
+  padding-left: 32px;
+  line-height: 39px;
+  position: relative;
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.sf-menu ul li:hover {
+  background: #295744;
+}
+.sf-menu ul li:hover a {
+  color: #ffffff;
+}
+.sf-menu ul li.first-child:before {
+  display: none;
+}
+.sf-menu ul li > .sf-with-ul:after {
+  font-family: FontAwesome;
+  font-size: 22px;
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: default;
+  content: "\f105";
+  color: #ffffff;
+  top: 0;
+  right: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.sf-menu ul li a {
+  display: block;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.sf-menu ul > .sfHover {
+  background: #295744;
+}
+.sf-menu ul > .sfHover > a:after {
+  color: #ffffff;
+}
+.sf-menu ul li.sfHover {
+  border-top: none;
+  background: #295744;
+}
+.sf-menu ul li.sfHover > a {
+  color: #ffffff;
+}
+/* Second level sub-menu styles
+========================================================*/
+.sf-menu ul ul {
+  position: absolute;
+  top: -16px;
+  left: 100%;
+  margin-left: 0;
+  background: #2c664e;
+  z-index: 4;
+}
+@media only screen and (max-width: 767px) {
+  .sf-menu {
+    display: none;
+  }
+  nav {
+    width: 100%;
+    float: none;
+  }
+  .select-menu {
+    border-radius: none;
+    display: block;
+    text-transform: capitalize;
+    float: none;
+    color: #fa751e;
+    width: 100%;
+    background: #ffffff;
+    margin-top: 20px;
+    font: 22px/28px "Ultra", sans-serif;
+    text-align: left;
+    border: 1px solid #c1c1c1;
+    padding: 2px 0;
+    position: relative;
+  }
+  .select-menu option {
+    text-align: left;
+    position: relative;
+  }
+}
+/*Core variables and mixins*/
